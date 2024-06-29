@@ -1,0 +1,80 @@
+.produtos-container {
+  display: flex;
+  flex-direction: column; 
+  height: 100vh;
+  background-color: white;
+}
+
+.produtos-title {
+  background-color: #ff44ba; 
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 0;
+}
+
+.produtos-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.produto-card {
+  background-color: #ff44ba; 
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.produto-card:hover {
+  transform: scale(1.05);
+}
+
+.produto-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.produto-name {
+  margin-top: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+.produto-info {
+  margin-top: 5px;
+  font-size: 14px;
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  background-color: #ff44ba; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover {
+  background-color: #ff44ba; 
+}
+
+.pagination-text {
+  margin: 0 10px;
+  font-size: 16px;
+  color: #ff44ba; 
+}
